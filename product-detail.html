@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANIFA - Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Cani<span>Fa</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html?category=nam">Nam</a></li>
+                <li><a href="products.html?category=nu">Nữ</a></li>
+                <li><a href="products.html?category=tre-em">Trẻ em</a></li>
+                <li><a href="#">Bộ sưu tập</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i>🔍</i></a>
+                <a href="#"><i>👤</i></a>
+                <a href="cart.html">
+                    <i>🛒</i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html?category=nam">Thời trang nam</a></li>
+            <li><a href="products.html?category=nam&subcategory=ao-phong">Áo phông nam</a></li>
+            <li>Áo phông nam Cotton Organic</li>
+        </ul>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="product-detail">
+        <!-- Product Gallery -->
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="/api/placeholder/600/800" alt="Áo phông nam Cotton Organic">
+            </div>
+            <div class="thumbnail-container">
+                <div class="thumbnail active">
+                    <img src="/api/placeholder/80/80" alt="Thumbnail 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="/api/placeholder/80/80" alt="Thumbnail 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="/api/placeholder/80/80" alt="Thumbnail 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="/api/placeholder/80/80" alt="Thumbnail 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-info">
+            <h1 class="product-title">Áo phông nam Cotton Organic</h1>
+            <div class="product-code">Mã sản phẩm: 8TC23S001</div>
+            <div class="product-pricing">
+                <span class="current-price">350.000₫</span>
+                <span class="original-price">450.000₫</span>
+                <span class="discount-badge">-22%</span>
+            </div>
+            <div class="product-description">
+                <p>Áo phông nam Cotton Organic với chất liệu cotton hữu cơ cao cấp, thân thiện với môi trường và làn da. Thiết kế đơn giản, hiện đại với form dáng vừa vặn, thoải mái cho các hoạt động thường ngày.</p>
+            </div>
+            <div class="product-options">
+                <div class="option-title">Màu sắc</div>
+                <div class="color-options">
+                    <div class="color-option active" style="background-color: #000000;" title="Đen"></div>
+                    <div class="color-option" style="background-color: #FFFFFF;" title="Trắng"></div>
+                    <div class="color-option" style="background-color: #0000FF;" title="Xanh"></div>
+                    <div class="color-option" style="background-color: #A52A2A;" title="Nâu"></div>
+                </div>
+
+                <div class="option-title">Kích cỡ</div>
+                <div class="size-options">
+                    <div class="size-option">S</div>
+                    <div class="size-option active">M</div>
+                    <div class="size-option">L</div>
+                    <div class="size-option">XL</div>
+                    <div class="size-option">XXL</div>
+                </div>
+                <span class="size-guide">Hướng dẫn chọn size</span>
+
+                <div class="option-title">Số lượng</div>
+                <div class="quantity-selector">
+                    <button class="quantity-btn">-</button>
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="quantity-btn">+</button>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-cart-btn">Thêm vào giỏ hàng</button>
+                <button class="buy-now-btn">Mua ngay</button>
+            </div>
+
+            <div class="product-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Chất liệu:</span>
+                    <span class="meta-value">100% Cotton Organic</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Xuất xứ:</span>
+                    <span class="meta-value">Việt Nam</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Danh mục:</span>
+                    <span class="meta-value">Áo phông nam</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Thẻ:</span>
+                    <span class="meta-value">Cotton, Organic, Basic, Áo nam</span>
+                </div>
+            </div>
+
+            <div class="product-share">
+                <span class="share-label">Chia sẻ:</span>
+                <div class="share-icons">
+                    <a href="#"><i>📱</i></a>
+                    <a href="#"><i>📘</i></a>
+                    <a href="#"><i>📸</i></a>
+                    <a href="#"><i>✉️</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Tabs -->
+    <div class="product-tabs">
+        <div class="tabs-navigation">
+            <button class="tab-button active" data-tab="description">Mô tả sản phẩm</button>
+            <button class="tab-button" data-tab="details">Chi tiết sản phẩm</button>
+            <button class="tab-button" data-tab="reviews">Đánh giá (12)</button>
+            <button class="tab-button" data-tab="shipping">Vận chuyển & Đổi trả</button>
+        </div>
+
+        <div id="description" class="tab-content active">
+            <h3>Mô tả sản phẩm</h3>
+            <p>Áo phông nam Cotton Organic là lựa chọn hoàn hảo cho những người đàn ông hiện đại, quan tâm đến môi trường và sức khỏe. Sản phẩm được làm từ 100% cotton hữu cơ, không sử dụng hóa chất độc hại, thân thiện với làn da nhạy cảm.</p>
+            <p>Thiết kế đơn giản với cổ tròn cổ điển, form dáng vừa vặn tôn lên vóc dáng người mặc. Áo có độ co giãn tốt, thoáng mát, thấm hút mồ hôi hiệu quả, phù hợp cho cả mùa hè và có thể mặc lớp trong vào mùa đông.</p>
+            <p>Sản phẩm thuộc bộ sưu tập Eco-Friendly của CANIFA, thể hiện cam kết của chúng tôi với môi trường và phát triển bền vững.</p>
+        </div>
+
+        <div id="details" class="tab-content">
+            <h3>Chi tiết sản phẩm</h3>
+            <table>
+                <tr>
+                    <th>Thuộc tính</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>Chất liệu</td>
+                    <td>100% Cotton Organic</td>
+                </tr>
+                <tr>
+                    <td>Màu sắc</td>
+                    <td>Đen, Trắng, Xanh, Nâu</td>
+                </tr>
+                <tr>
+                    <td>Kích cỡ</td>
+                    <td>S, M, L, XL, XXL</td>
+                </tr>
+                <tr>
+                    <td>Kiểu dáng</td>
+                    <td>Regular fit, cổ tròn</td>
+                </tr>
+                <tr>
+                    <td>Xuất xứ</td>
+                    <td>Việt Nam</td>
+                </tr>
+                <tr>
+                    <td>Hướng dẫn giặt</td>
+                    <td>Giặt máy ở nhiệt độ thấp, không tẩy, không sấy, ủi ở nhiệt độ trung bình</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="reviews" class="tab-content">
+            <h3>Đánh giá từ khách hàng</h3>
+            <p>Chưa có đánh giá nào. Hãy là người đầu tiên đánh giá sản phẩm này!</p>
+        </div>
+
+        <div id="shipping" class="tab-content">
+            <h3>Chính sách vận chuyển & đổi trả</h3>
+            <p><strong>Vận chuyển:</strong></p>
+            <p>- Miễn phí vận chuyển cho đơn hàng từ 500.000đ</p>
+            <p>- Phí vận chuyển 30.000đ cho đơn hàng dưới 500.000đ</p>
+            <p>- Thời gian giao hàng: 2-4 ngày làm việc (không tính cuối tuần và ngày lễ)</p>
+            
+            <p><strong>Chính sách đổi trả:</strong></p>
+            <p>- Đổi trả miễn phí trong vòng 30 ngày</p>
+            <p>- Sản phẩm phải còn nguyên tem mác, chưa qua sử dụng</p>
+            <p>- Không áp dụng đổi trả với sản phẩm mua trong chương trình khuyến mãi đặc biệt</p>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="related-products">
+        <div class="section-title">
+            <h2>Sản phẩm liên quan</h2>
+            <p>Bạn cũng có thể thích</p>
+        </div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                </div>
+                <div class="product-card-info">
+                    <h3 class="product-name">Áo phông nam in họa tiết</h3>
+                    <div class="product-category">Nam</div>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">299.000₫</span>
+                        </div>
+                        <div class="add-to-cart-icon">+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    <div class="product-tag">Giảm 30%</div>
+                </div>
+                <div class="product-card-info">
+                    <h3 class="product-name">Áo phông nam trơn cổ tròn</h3>
+                    <div class="product-category">Nam</div>
+                    <div class="product-price">
+                        <div>
+                            <span class="old-price">399.000₫</span>
+                            <span class="price">279.000₫</span>
+                        </div>
+                        <div class="add-to-cart-icon">+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                </div>
+                <div class="product-card-info">
+                    <h3 class="product-name">Áo phông nam cổ tim</h3>
+                    <div class="product-category">Nam</div>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">329.000₫</span>
+                        </div>
+                        <div class="add-to-cart-icon">+</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    <div class="product-tag">Bán chạy</div>
+                </div>
+                <div class="product-card-info">
+                    <h3 class="product-name">Áo phông nam dài tay</h3>
+                    <div class="product-category">Nam</div>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">379.000₫</span>
+                        </div>
+                        <div class="add-to-cart-icon">+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">Cani<span>Fa</span></div>
+                <p>CANIFA là thương hiệu thời trang Việt Nam với sứ mệnh mang đến những sản phẩm chất lượng, phong cách và thân thiện với môi trường.</p>
+                <div class="social-icons">
+                    <a href="#"><i>📱</i></a>
+                    <a href="#"><i>📘</i></a>
+                    <a href="#"><i>📸</i></a>
+                    <a href="#"><i>📺</i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Danh mục</h3>
+                <ul>
+                    <li><a href="products.html?category=nam">Thời trang nam</a></li>
+                    <li><a href="products.html?category=nu">Thời trang nữ</a></li>
+                    <li><a href="products.html?category=tre-em">Thời trang trẻ em</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Bộ sưu tập</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Liên hệ</h3>
+                <p><i>🏠</i> 123 Đường Thời Trang, Quận 1, TP.HCM</p>
+                <p><i>📞</i> +84 123 456 789</p>
+                <p><i>✉️</i> info@canifa.com</p>
+                <p><i>⏰</i> T2-CN: 9:00 - 21:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CANIFA. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

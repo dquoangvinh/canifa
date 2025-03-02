@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANIFA - Danh Sách Sản Phẩm</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Cani<span>Fa</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html?category=nam">Nam</a></li>
+                <li><a href="products.html?category=nu">Nữ</a></li>
+                <li><a href="products.html?category=tre-em">Trẻ em</a></li>
+                <li><a href="#">Bộ sưu tập</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#"><i>🔍</i></a>
+                <a href="#"><i>👤</i></a>
+                <a href="cart.html">
+                    <i>🛒</i>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Thời Trang Nam</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li>Thời trang nam</li>
+        </ul>
+    </div>
+
+    <!-- Products Container -->
+    <div class="products-container">
+        <!-- Filters Sidebar -->
+        <div class="filters">
+            <div class="filter-section">
+                <h3 class="filter-title">Danh mục</h3>
+                <ul class="filter-items">
+                    <li class="filter-item">
+                        <input type="checkbox" id="category-1" checked>
+                        <label for="category-1">Áo phông (24)</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="category-2">
+                        <label for="category-2">Áo sơ mi (18)</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="category-3">
+                        <label for="category-3">Quần Jean (15)</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="category-4">
+                        <label for="category-4">Quần Kaki (12)</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="category-5">
+                        <label for="category-5">Áo khoác (9)</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Kích cỡ</h3>
+                <ul class="filter-items">
+                    <li class="filter-item">
+                        <input type="checkbox" id="size-1">
+                        <label for="size-1">S</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="size-2">
+                        <label for="size-2">M</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="size-3">
+                        <label for="size-3">L</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="size-4">
+                        <label for="size-4">XL</label>
+                    </li>
+                    <li class="filter-item">
+                        <input type="checkbox" id="size-5">
+                        <label for="size-5">XXL</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Màu sắc</h3>
+                <div>
+                    <span class="color-option" style="background-color: #000000;"></span>
+                    <span class="color-option" style="background-color: #FFFFFF;"></span>
+                    <span class="color-option" style="background-color: #0000FF;"></span>
+                    <span class="color-option" style="background-color: #FF0000;"></span>
+                    <span class="color-option" style="background-color: #FFFF00;"></span>
+                    <span class="color-option" style="background-color: #00FF00;"></span>
+                    <span class="color-option" style="background-color: #FFA500;"></span>
+                    <span class="color-option" style="background-color: #A52A2A;"></span>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3 class="filter-title">Giá</h3>
+                <div class="price-range">
+                    <input type="text" placeholder="Min">
+                    <span class="price-dash">-</span>
+                    <input type="text" placeholder="Max">
+                </div>
+                <button class="filter-button">Áp dụng</button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <div class="product-sorting">
+                <div class="showing-results">Hiển thị 1-12 trong số 36 sản phẩm</div>
+                <div class="sort-options">
+                    <label for="sort-by">Sắp xếp theo:</label>
+                    <select id="sort-by">
+                        <option value="featured">Nổi bật</option>
+                        <option value="newest">Mới nhất</option>
+                        <option value="price-asc">Giá: Thấp đến cao</option>
+                        <option value="price-desc">Giá: Cao đến thấp</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-list">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                        <div class="product-tag">Mới</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam Cotton Organic</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">450.000₫</span>
+                                <span class="price">350.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam in họa tiết</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">299.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                        <div class="product-tag">Giảm 30%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam trơn cổ tròn</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">399.000₫</span>
+                                <span class="price">279.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam cổ tim</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">329.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                        <div class="product-tag">Bán chạy</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam dài tay</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">379.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam phom rộng</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">359.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam sọc ngang</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">399.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                        <div class="product-tag">Giảm 20%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam thể thao</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="old-price">420.000₫</span>
+                                <span class="price">336.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/api/placeholder/400/320" alt="Áo phông nam">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Áo phông nam logo CANIFA</h3>
+                        <div class="product-category">Nam</div>
+                        <div class="product-price">
+                            <div>
+                                <span class="price">349.000₫</span>
+                            </div>
+                            <div class="add-to-cart">+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <div class="footer-logo">Cani<span>Fa</span></div>
+                <p>CANIFA là thương hiệu thời trang Việt Nam với sứ mệnh mang đến những sản phẩm chất lượng, phong cách và thân thiện với môi trường.</p>
+                <div class="social-icons">
+                    <a href="#"><i>📱</i></a>
+                    <a href="#"><i>📘</i></a>
+                    <a href="#"><i>📸</i></a>
+                    <a href="#"><i>📺</i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Danh mục</h3>
+                <ul>
+                    <li><a href="products.html?category=nam">Thời trang nam</a></li>
+                    <li><a href="products.html?category=nu">Thời trang nữ</a></li>
+                    <li><a href="products.html?category=tre-em">Thời trang trẻ em</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                    <li><a href="#">Bộ sưu tập</a></li>
+                    <li><a href="#">Khuyến mãi</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Liên hệ</h3>
+                <p><i>🏠</i> 123 Đường Thời Trang, Quận 1, TP.HCM</p>
+                <p><i>📞</i> +84 123 456 789</p>
+                <p><i>✉️</i> info@canifa.com</p>
+                <p><i>⏰</i> T2-CN: 9:00 - 21:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 CANIFA. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

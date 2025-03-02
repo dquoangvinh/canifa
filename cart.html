@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CANIFA - Giỏ Hàng</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">Cani<span>Fa</span></div>
+        <ul class="nav-links">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="products.html?category=nam">Nam</a></li>
+          <li><a href="products.html?category=nu">Nữ</a></li>
+          <li><a href="products.html?category=tre-em">Trẻ em</a></li>
+          <li><a href="#">Bộ sưu tập</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="#"><i>🔍</i></a>
+          <a href="#"><i>👤</i></a>
+          <a href="cart.html">
+            <i>🛒</i>
+            <span class="cart-count">3</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <div class="page-title">
+      <h1>Giỏ Hàng</h1>
+      <ul class="breadcrumb">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li>Giỏ hàng</li>
+      </ul>
+    </div>
+
+    <!-- Cart Container -->
+    <div class="cart-container">
+      <!-- Cart Content -->
+      <div class="cart-sections">
+        <!-- Cart Items -->
+        <div class="cart-items">
+          <div class="cart-header">
+            <div>
+              <h2 class="cart-title">Giỏ hàng của bạn</h2>
+              <span class="cart-count-text">3 sản phẩm</span>
+            </div>
+            <a href="products.html" class="continue-shopping">
+              <i>←</i> Tiếp tục mua sắm
+            </a>
+          </div>
+
+          <!-- Cart Item 1 -->
+          <div class="cart-item">
+            <div class="item-image">
+              <img
+                src="/api/placeholder/100/100"
+                alt="Áo phông nam Cotton Organic"
+              />
+            </div>
+            <div class="item-details">
+              <h3 class="item-name">Áo phông nam Cotton Organic</h3>
+              <div class="item-options">
+                <div class="item-color">Màu sắc: Đen</div>
+                <div class="item-size">Kích cỡ: M</div>
+              </div>
+              <div class="item-actions">
+                <div class="quantity-selector">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1" />
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-price">
+                  <div>
+                    <span class="old-price">450.000₫</span>
+                    <span class="price">350.000₫</span>
+                  </div>
+                  <button class="remove-item">Xóa</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart Item 2 -->
+          <div class="cart-item">
+            <div class="item-image">
+              <img
+                src="/api/placeholder/100/100"
+                alt="Áo sơ mi nữ dài tay Minimalist"
+              />
+            </div>
+            <div class="item-details">
+              <h3 class="item-name">Áo sơ mi nữ dài tay Minimalist</h3>
+              <div class="item-options">
+                <div class="item-color">Màu sắc: Trắng</div>
+                <div class="item-size">Kích cỡ: S</div>
+              </div>
+              <div class="item-actions">
+                <div class="quantity-selector">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1" />
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-price">
+                  <span class="price">420.000₫</span>
+                  <button class="remove-item">Xóa</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cart Item 3 -->
+          <div class="cart-item">
+            <div class="item-image">
+              <img
+                src="/api/placeholder/100/100"
+                alt="Quần jean nam Slim Fit"
+              />
+            </div>
+            <div class="item-details">
+              <h3 class="item-name">Quần jean nam Slim Fit</h3>
+              <div class="item-options">
+                <div class="item-color">Màu sắc: Xanh đậm</div>
+                <div class="item-size">Kích cỡ: 32</div>
+              </div>
+              <div class="item-actions">
+                <div class="quantity-selector">
+                  <button class="quantity-btn">-</button>
+                  <input type="text" class="quantity-input" value="1" />
+                  <button class="quantity-btn">+</button>
+                </div>
+                <div class="item-price">
+                  <span class="price">650.000₫</span>
+                  <button class="remove-item">Xóa</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+          <h2 class="summary-title">Tổng giỏ hàng</h2>
+          <div class="summary-row">
+            <span>Tạm tính:</span>
+            <span>1.420.000₫</span>
+          </div>
+          <div class="summary-row">
+            <span>Giảm giá:</span>
+            <span>-100.000₫</span>
+          </div>
+          <div class="summary-row">
+            <span>Phí vận chuyển:</span>
+            <span>30.000₫</span>
+          </div>
+          <div class="summary-row total">
+            <span>Tổng cộng:</span>
+            <span>1.350.000₫</span>
+          </div>
+
+          <div class="promo-code">
+            <label for="promo">Mã giảm giá:</label>
+            <div class="promo-input">
+              <input type="text" id="promo" placeholder="Nhập mã giảm giá" />
+              <button>Áp dụng</button>
+            </div>
+          </div>
+
+          <button class="checkout-btn">Tiến hành thanh toán</button>
+          <a href="index.html" class="continue-btn">Tiếp tục mua sắm</a>
+
+          <div class="accepted-payments">
+            <p>Chúng tôi chấp nhận:</p>
+            <div class="payment-icons">
+              <i>💳</i>
+              <i>💰</i>
+              <i>🏦</i>
+              <i>📱</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-about">
+          <div class="footer-logo">Cani<span>Fa</span></div>
+          <p>
+            CANIFA là thương hiệu thời trang Việt Nam với sứ mệnh mang đến những
+            sản phẩm chất lượng, phong cách và thân thiện với môi trường.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i>📱</i></a>
+            <a href="#"><i>📘</i></a>
+            <a href="#"><i>📸</i></a>
+            <a href="#"><i>📺</i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Liên kết nhanh</h3>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Chính sách bảo mật</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h3>Danh mục</h3>
+          <ul>
+            <li><a href="products.html?category=nam">Thời trang nam</a></li>
+            <li><a href="products.html?category=nu">Thời trang nữ</a></li>
+            <li>
+              <a href="products.html?category=tre-em">Thời trang trẻ em</a>
+            </li>
+            <li><a href="#">Phụ kiện</a></li>
+            <li><a href="#">Bộ sưu tập</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Liên hệ</h3>
+          <p><i>🏠</i> 123 Đường Thời Trang, Quận 1, TP.HCM</p>
+          <p><i>📞</i> +84 123 456 789</p>
+          <p><i>✉️</i> info@canifa.com</p>
+          <p><i>⏰</i> T2-CN: 9:00 - 21:00</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 CANIFA. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
